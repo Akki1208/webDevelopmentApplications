@@ -18,7 +18,12 @@ export default function Home() {
       >
       <mesh>
     
-          <OrbitControls />
+          <OrbitControls 
+          enableZoom={false}
+          enableDamping
+          maxPolarAngle={2}
+          minAzimuthAngle={-Math.PI * 0.5}
+          maxAzimuthAngle={Math.PI * 0.5}x/>
           <ambientLight intensity={0.5} />
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
           <boxGeometry/>

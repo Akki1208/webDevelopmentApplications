@@ -3,6 +3,20 @@
 import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
+import { Vector3 } from "three";
+import { useRef } from 'react';
+const Torch = ({vec = new THREE.Vector3(), ...props})=>{
+  const Light = useRef<THREE.SpotLight>(null)
+return <spotLight ref={Light}
+castShadow
+penumbra={1}
+distance={10}
+angle={0.35}
+intensity={3}
+{...props}
+/>
+
+}
 
 
 const CanvasComponent: React.FC = () => {
