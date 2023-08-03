@@ -3,7 +3,7 @@
 import { OrbitControls } from '@react-three/drei';
 import {Canvas} from '@react-three/fiber';
 import React from 'react';
-import CanvasComponent from '../../components/CanvasComponent';
+// import CanvasComponent from '../../components/CanvasComponent';
 
 
 
@@ -24,10 +24,10 @@ export default function Home() {
           <boxGeometry/>
 
 
-          <CanvasComponent/>
+          
       </mesh>
-      {/* <CanvasComponent/> */}
-      </Canvas>
+        </Canvas>
+        {/* <CanvasComponent/> */}
       </main>
   )
 }
